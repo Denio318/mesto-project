@@ -1,0 +1,33 @@
+.profile {
+  display: grid;
+  max-width: 880px;
+  grid-template-areas:
+    "profile__avatar profile__user-name edit-profile add-button"
+    "profile__avatar profile__user-position edit-profile add-button";
+  grid-template-columns: 150px 312px 1fr 150px;
+}
+
+@media (max-width: 1023px) {
+  .profile {
+    grid-template-areas:
+      "profile__avatar profile__user-name edit-profile"
+      "profile__avatar profile__user-position edit-profile"
+      "add-button add-button add-button";
+    grid-template-columns: 150px 312px 1fr;
+    max-width: 581px;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile {
+    max-width: 282px;
+    grid-template-areas:
+      "profile__avatar profile__avatar profile__avatar"
+      "null profile__user-name edit-profile"
+      "profile__user-position profile__user-position profile__user-position"
+      "add-button add-button add-button";
+    grid-template-columns: 1fr 189px 1fr;
+    column-gap: 10px;
+    row-gap: 12px;
+  }
+}

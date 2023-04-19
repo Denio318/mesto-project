@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Mesto</title>
+    <meta name="author" content="Денис Елсуков" />
+  </head>
+
+  <body class="page">
+    <header class="header page__header">
+      <img src="./images/logo.svg" alt="Логотип" class="logo page__logo" />
+    </header>
+
+    <main>
+      <section class="profile page__profile">
+        <img
+          src="./images/avatar.jpg"
+          alt="Фото профеля"
+          class="profile__avatar"
+        />
+        <h1 class="profile__user-name">Жак-Ив Кусто</h1>
+        <p class="profile__user-position">Исследователь океана</p>
+        <button
+          type="button"
+          title="Редактировать профиль"
+          class="profile__edit-profile"
+        ></button>
+        <button
+          type="button"
+          title="Добавить новую фотографию"
+          class="profile__add-button"
+        ></button>
+      </section>
+
+      <section class="cards page__cards">
+        <article class="card">
+          <img
+            src="./images/kirill-pershin-1088404-unsplash.jpg"
+            alt="Фотография исторического памятника в Карачаевске"
+            class="card__photo"
+          />
+          <div class="card__text">
+            <h2 class="card__title">Карачаевск</h2>
+            <button
+              type="button"
+              aria-label="like"
+              class="card__heart"
+            ></button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="./images/kirill-pershin-1404681-unsplash.jpg"
+            alt="Закат с видом на Гору Эльбрус"
+            class="card__photo"
+          />
+          <div class="card__text">
+            <h2 class="card__title">Гора Эльбрус</h2>
+            <button
+              type="button"
+              aria-label="like"
+              class="card__heart"
+            ></button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="./images/kirill-pershin-1556355-unsplash.jpg"
+            alt="Красивый вид на горы в Домбае"
+            class="card__photo"
+          />
+          <div class="card__text">
+            <h2 class="card__title">Домбай</h2>
+            <button
+              type="button"
+              aria-label="like"
+              class="card__heart"
+            ></button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="./images/эльбрус.jpeg"
+            alt="Отличный вид на Гору Эльбрус"
+            class="card__photo"
+          />
+          <div class="card__text">
+            <h2 class="card__title">Гора Эльбрус</h2>
+            <button
+              type="button"
+              aria-label="like"
+              class="card__heart"
+            ></button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="./images/Домбай.jpg"
+            alt="Надпись Домбай на фоне гор"
+            class="card__photo"
+          />
+          <div class="card__text">
+            <h2 class="card__title">Домбай</h2>
+            <button
+              type="button"
+              aria-label="like"
+              class="card__heart card__heart_active"
+            ></button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="./images/Черкессия.jpg"
+            alt="Исторический памятник в горах Карачаево-Черкессии"
+            class="card__photo"
+          />
+          <div class="card__text">
+            <h2 class="card__title">Карачаево-Черкессия</h2>
+            <button
+              type="button"
+              aria-label="like"
+              class="card__heart"
+            ></button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer page__footer">
+      <p class="footer__copyright">&#169; 2023 Mesto Russia</p>
+    </footer>
+
+    <div class="popup">
+      <div class="popup__container">
+        <button
+          type="button"
+          aria-label="Close"
+          class="popup__close-button"
+        ></button>
+        <form name="profile" class="popup__form">
+          <h3 class="popup__title">Редактировать профиль</h3>
+          <input type="text" name="user-name" class="popup__input" />
+          <input type="text" name="user-position" class="popup__input" />
+          <button type="submit" aria-label="save" class="popup__save-button">
+            Сохранить
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

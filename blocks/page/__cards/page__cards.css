@@ -1,0 +1,9 @@
+.page__cards {
+  padding-top: 48px;
+}
+
+@media (max-width: 767px) {
+  .page__cards {
+    padding-top: 36px;
+  }
+}
