@@ -14,5 +14,6 @@
   .profile__user-name {
     font-size: 27px;
     margin: 13px auto 0;
+    max-width: 190px;
   }
 }

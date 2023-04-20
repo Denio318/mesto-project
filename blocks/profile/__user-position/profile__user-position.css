@@ -18,5 +18,6 @@
   .profile__user-position {
     font-size: 14px;
     margin: 0 auto;
+    max-width: 282px;
   }
 }
